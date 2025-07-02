@@ -3,13 +3,7 @@ import Navbar from "./Navbar";
 
 function Port() {
   const data = JSON.parse(localStorage.getItem("data"));
-  const skill = Array.isArray(data.skill)
-  ? data.skill
-  : data.skill?.split(",").map(s => ({ name: s.trim() })) || [];
-console.log(skill)
-skill.map((s,i)=>{
-  console.log(s)
-})
+  const skill = Array.isArray(data.skill)? data.skill: data.skill?.split(",").map(s => ({ name: s.trim() })) || [];
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
