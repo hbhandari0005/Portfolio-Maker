@@ -6,7 +6,10 @@ function Port() {
   const skill = Array.isArray(data.skill)
   ? data.skill
   : data.skill?.split(",").map(s => ({ name: s.trim() })) || [];
-
+console.log(skill)
+skill.map((s,i)=>{
+  console.log(s)
+})
   useEffect(() => {
     document.documentElement.style.scrollBehavior = "smooth";
   }, []);
@@ -46,7 +49,7 @@ function Port() {
           <div className="flex flex-wrap gap-2">
             {skill.map((s, i) => (
               <span key={i} className="bg-purple-700 px-3 py-1 rounded-full text-sm sm:text-base">
-                {s.name}
+                {s}
               </span>
             ))}
           </div>
