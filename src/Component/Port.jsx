@@ -46,7 +46,7 @@ function Port() {
           <div className="flex flex-wrap gap-2">
             {skill.map((s, i) => (
               <span key={i} className="bg-purple-700 px-3 py-1 rounded-full text-sm sm:text-base">
-                {s.name}
+                {s}
               </span>
             ))}
           </div>
