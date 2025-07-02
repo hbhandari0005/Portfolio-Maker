@@ -1,0 +1,57 @@
+/* @type css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toast-class {
+  background: #ffffff;
+  color: #1f2937;
+  padding: 14px 20px;
+  border-radius: 5px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  font-weight: 500;
+  max-width: fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
+  box-sizing: border-box;
+  padding-right: 2rem !important;
+}
+
+
+
+.notFound{
+  display: flex;
+  align-items: center;
+  justify-content: center !important;
+  height:100vh;
+  background-color: rgb(1, 1, 1);
+}
+.headLine{
+  height: fit-content;
+  background-color: rgb(233, 66, 66);
+  padding: 3rem;
+  margin: 2rem;
+  top: 10rem !important;
+  font-size: 1.5rem ;
+  border-radius: 1rem;
+}
+
+@media (max-width: 500px) {
+  .toast-class {
+    max-width: fit-content;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 10px 14px;
+    padding-right: 1rem;
+  }
+  .notFound{
+    align-items: normal;
+  }
+  .headLine{
+    padding:1rem 2rem;
+    margin-top: 5rem !important;
+    font-size: 1.2rem ;
+  }
+}
