@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Form from "./Component/form";
+import Form from "./Component/Form";
 import Port from "./Component/Port";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
